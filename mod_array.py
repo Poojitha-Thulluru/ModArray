@@ -11,6 +11,7 @@ def get_mod_array(num_array: list, divisor: int) -> int:
     for val in range(len(num_array) - 1, -1, -1):
         result = (result + ((num_array[val] % divisor) * power)) % divisor
         power = (power * 10) % divisor
+
     return result
 
 
